@@ -21,6 +21,14 @@ def get_data():
 			{
 				'label': _('Projects'),
 				'items': ['Project']
+			},
+			{
+				'label': _('Communication/Call Log'),
+				'items': ['Call Logs']
+			},
+			{
+				'label': _('Planned date for communication'),
+				'items': ['Call Logs']
 			}
 		]
 	}

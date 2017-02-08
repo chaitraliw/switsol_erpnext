@@ -37,7 +37,10 @@ class Project(Document):
 				"end_date": task.exp_end_date,
 				"description": task.description,
 				"task_id": task.name,
-				"task_weight": task.task_weight
+				"task_weight": task.task_weight,
+				"responsible_user": task.responsible_user,
+                "group_name": task.group_name
+                #"task_group_with_indicator": task.group_name
 			})
 
 	def get_tasks(self):
@@ -80,7 +83,9 @@ class Project(Document):
 				"exp_start_date": t.start_date,
 				"exp_end_date": t.end_date,
 				"description": t.description,
-				"task_weight": t.task_weight
+				"task_weight": t.task_weight,
+				"group_name":t.group_name,
+				"responsible_user":t.responsible_user
 			})
 
 			task.flags.ignore_links = True
